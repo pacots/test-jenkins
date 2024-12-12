@@ -30,7 +30,7 @@ pipeline {
     post {
         success {
             script {
-                def prStatus = 'success'
+                def prStatus = 'failure'
                 updateGitHubStatus(prStatus)
             }
         }
