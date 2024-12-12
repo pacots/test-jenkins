@@ -51,7 +51,7 @@ def updateGitHubStatus(String status) {
         def data = """
         {
             "state": "${status}",
-            "context": "Jenkins CI"
+            "context": "Buenaaas"
         }
         """
         sh "curl -X POST -H 'Authorization: token ${GITHUB_TOKEN}' -d '${data}' ${prUrl}"
